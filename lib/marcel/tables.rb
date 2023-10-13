@@ -9,6 +9,7 @@ module Marcel
   EXTENSIONS = {
     '123' => 'application/vnd.lotus-1-2-3',
     '3dml' => 'text/vnd.in3d.3dml',
+    '3ds' => 'image/x-3ds',
     '3fr' => 'image/x-raw-hasselblad',
     '3g2' => 'video/3gpp2',
     '3gp' => 'video/3gpp',
@@ -32,6 +33,7 @@ module Marcel
     'ad.txt' => 'text/x-asciidoc',
     'ada' => 'text/x-ada',
     'adb' => 'text/x-ada',
+    'adf' => 'application/x-amiga-disk-format',
     'adoc' => 'text/x-asciidoc',
     'adoc.txt' => 'text/x-asciidoc',
     'adp' => 'audio/adpcm',
@@ -111,6 +113,7 @@ module Marcel
     'brotli' => 'application/x-brotli',
     'bsh' => 'text/plain',
     'btif' => 'image/prs.btif',
+    'bup' => 'application/x-dvd-ifo',
     'bz' => 'application/x-bzip',
     'bz2' => 'application/x-bzip2',
     'c' => 'text/x-c++src',
@@ -130,6 +133,7 @@ module Marcel
     'cc' => 'text/x-c++src',
     'cct' => 'application/x-director',
     'ccxml' => 'application/ccxml+xml',
+    'cda' => 'application/x-cdf',
     'cdbcmsg' => 'application/vnd.contact.cmsg',
     'cdf' => 'application/x-netcdf',
     'cdkey' => 'application/vnd.mediastation.cdkey',
@@ -137,6 +141,7 @@ module Marcel
     'cdx' => 'chemical/x-cdx',
     'cdxml' => 'application/vnd.chemdraw+xml',
     'cdy' => 'application/vnd.cinderella',
+    'cel' => 'image/vnd.dgn',
     'cer' => 'application/pkix-cert',
     'cfc' => 'text/x-coldfusion',
     'cfg' => 'text/x-config',
@@ -178,7 +183,8 @@ module Marcel
     'cpio' => 'application/x-cpio',
     'cpp' => 'text/x-c++src',
     'cpt' => 'application/mac-compactpro',
-    'cr2' => 'image/x-raw-canon',
+    'cr2' => 'image/x-canon-cr2',
+    'cr3' => 'image/x-canon-cr3',
     'crd' => 'application/x-mscardfile',
     'crl' => 'application/pkix-crl',
     'crt' => 'application/x-x509-cert',
@@ -219,6 +225,8 @@ module Marcel
     'der' => 'application/x-x509-cert;format=der',
     'dex' => 'application/x-dex',
     'dfac' => 'application/vnd.dreamfactory',
+    'dgn' => 'image/vnd.dgn',
+    'dgnlib' => 'image/vnd.dgn',
     'dib' => 'image/bmp',
     'dif' => 'application/dif+xml',
     'diff' => 'text/x-diff',
@@ -268,6 +276,7 @@ module Marcel
     'dxp' => 'application/vnd.spotfire.dxp',
     'dxr' => 'application/x-director',
     'e' => 'text/x-eiffel',
+    'e57' => 'model/e57',
     'ear' => 'application/x-tika-java-enterprise-archive',
     'ecelp4800' => 'audio/vnd.nuera.ecelp4800',
     'ecelp7470' => 'audio/vnd.nuera.ecelp7470',
@@ -286,6 +295,7 @@ module Marcel
     'emma' => 'application/emma+xml',
     'emz' => 'image/x-emf-compressed',
     'enr' => 'application/x-endnote-refer',
+    'ens' => 'application/x-endnote-style',
     'ent' => 'text/plain',
     'enw' => 'application/x-endnote-refer',
     'eol' => 'audio/vnd.digital-winds',
@@ -313,6 +323,7 @@ module Marcel
     'f90' => 'text/x-fortran',
     'fb2' => 'application/x-fictionbook+xml',
     'fbs' => 'image/vnd.fastbidsheet',
+    'fcs' => 'application/vnd.isac.fcs',
     'fdf' => 'application/vnd.fdf',
     'fe_launch' => 'application/vnd.denovo.fcselayout-link',
     'fff' => 'image/x-raw-imacon',
@@ -383,6 +394,8 @@ module Marcel
     'gnucash' => 'application/x-gnucash',
     'gnumeric' => 'application/x-gnumeric',
     'go' => 'text/x-go',
+    'gp4' => 'application/x-guitar-pro',
+    'gpg' => 'application/pgp-encrypted',
     'gph' => 'application/vnd.flographit',
     'gqf' => 'application/vnd.grafeq',
     'gqs' => 'application/vnd.grafeq',
@@ -396,6 +409,7 @@ module Marcel
     'grv' => 'application/vnd.groove-injector',
     'grxml' => 'application/srgs+xml',
     'gsf' => 'application/x-font-ghostscript',
+    'gslib' => 'audio/x-psf',
     'gtar' => 'application/x-gtar',
     'gtm' => 'application/vnd.groove-tool-message',
     'gtw' => 'model/vnd.gtw',
@@ -434,6 +448,7 @@ module Marcel
     'hvd' => 'application/vnd.yamaha.hv-dic',
     'hvp' => 'application/vnd.yamaha.hv-voice',
     'hvs' => 'application/vnd.yamaha.hv-script',
+    'hwpx' => 'application/hwp+zip',
     'hx' => 'text/x-haxe',
     'hxx' => 'text/x-c++hdr',
     'i3' => 'text/x-modula',
@@ -446,9 +461,11 @@ module Marcel
     'ico' => 'image/vnd.microsoft.icon',
     'ics' => 'text/calendar',
     'idl' => 'text/x-idl',
+    'idml' => 'application/vnd.adobe.indesign-idml-package',
     'ief' => 'image/ief',
     'ifb' => 'text/calendar',
     'ifm' => 'application/vnd.shana.informed.formdata',
+    'ifo' => 'application/x-dvd-ifo',
     'ig' => 'text/x-modula',
     'iges' => 'model/iges',
     'igl' => 'application/vnd.igloader',
@@ -480,6 +497,7 @@ module Marcel
     'java' => 'text/x-java-source',
     'jb2' => 'image/x-jbig2',
     'jbig2' => 'image/x-jbig2',
+    'jdf' => 'application/x-jeol-jdf',
     'jfi' => 'image/jpeg',
     'jfif' => 'image/jpeg',
     'jif' => 'image/jpeg',
@@ -504,6 +522,7 @@ module Marcel
     'jsp' => 'text/x-jsp',
     'junit' => 'text/plain',
     'jx' => 'text/plain',
+    'jxl' => 'image/jxl',
     'k25' => 'image/x-raw-kodak',
     'kar' => 'audio/midi',
     'karbon' => 'application/vnd.kde.karbon',
@@ -525,7 +544,9 @@ module Marcel
     'kwd' => 'application/vnd.kde.kword',
     'kwt' => 'application/vnd.kde.kword',
     'l' => 'text/x-lex',
+    'las' => 'application/x-asprs',
     'latex' => 'application/x-latex',
+    'laz' => 'application/x-asprs',
     'lbd' => 'application/vnd.llamagraphics.life-balance.desktop',
     'lbe' => 'application/vnd.llamagraphics.life-balance.exchange+xml',
     'les' => 'application/vnd.hhe.lesson-player',
@@ -546,6 +567,7 @@ module Marcel
     'lua' => 'text/x-lua',
     'lvp' => 'audio/vnd.lucent.voice',
     'lwp' => 'application/vnd.lotus-wordpro',
+    'lyr' => 'application/x-esri-layer',
     'lz' => 'application/x-lzip',
     'lz4' => 'application/x-lz4',
     'lzh' => 'application/octet-stream',
@@ -600,6 +622,9 @@ module Marcel
     'midi' => 'audio/midi',
     'mif' => 'application/vnd.mif',
     'mime' => 'message/rfc822',
+    'minigsf' => 'audio/x-psf',
+    'minipsf' => 'audio/x-psf',
+    'minipsf1' => 'audio/x-psf',
     'mj2' => 'video/mj2',
     'mjp2' => 'video/mj2',
     'mka' => 'audio/x-matroska',
@@ -649,6 +674,7 @@ module Marcel
     'mrc' => 'application/marc',
     'mrw' => 'image/x-raw-minolta',
     'ms' => 'text/troff',
+    'msa' => 'application/vnd.msa-disk-image',
     'mscml' => 'application/mediaservercontrol+xml',
     'mseed' => 'application/vnd.fdsn.mseed',
     'mseq' => 'application/vnd.mseq',
@@ -679,6 +705,7 @@ module Marcel
     'nc' => 'application/x-netcdf',
     'ncx' => 'application/x-dtbncx+xml',
     'nef' => 'image/x-raw-nikon',
+    'nes' => 'application/x-nesrom',
     'ngdat' => 'application/vnd.nokia.n-gage.data',
     'nitf' => 'image/nitf',
     'nlu' => 'application/vnd.neurolanguage.nlu',
@@ -753,6 +780,7 @@ module Marcel
     'pbd' => 'application/vnd.powerbuilder6',
     'pbm' => 'image/x-portable-bitmap',
     'pcap' => 'application/vnd.tcpdump.pcap',
+    'pcapng' => 'application/vnd.tcpdump.pcapng',
     'pcf' => 'application/x-font-pcf',
     'pcl' => 'application/vnd.hp-pcl',
     'pclxl' => 'application/vnd.hp-pclxl',
@@ -821,6 +849,8 @@ module Marcel
     'psb' => 'application/vnd.3gpp.pic-bw-small',
     'psd' => 'image/vnd.adobe.photoshop',
     'psf' => 'application/x-font-linux-psf',
+    'psf1' => 'audio/x-psf',
+    'psflib' => 'audio/x-psf',
     'pst' => 'application/vnd.ms-outlook-pst',
     'ptid' => 'application/vnd.pvi.ptid1',
     'ptx' => 'image/x-raw-pentax',
@@ -890,6 +920,7 @@ module Marcel
     's7m' => 'application/x-sas-dmdb',
     'sa7' => 'application/x-sas-access',
     'saf' => 'application/vnd.yamaha.smaf-audio',
+    'sap' => 'audio/x-sap',
     'sas' => 'application/x-sas',
     'sas7bacs' => 'application/x-sas-access',
     'sas7baud' => 'application/x-sas-audit',
@@ -906,6 +937,7 @@ module Marcel
     'sas7butl' => 'application/x-sas-utility',
     'sas7bvew' => 'application/x-sas-view',
     'sass' => 'text/x-sass',
+    'sav' => 'application/x-spss-sav',
     'sbml' => 'application/sbml+xml',
     'sc' => 'application/vnd.ibm.secure-container',
     'sc7' => 'application/x-sas-catalog',
@@ -948,6 +980,7 @@ module Marcel
     'shp' => 'application/x-shapefile',
     'shw' => 'application/x-corelpresentations',
     'si7' => 'application/x-sas-data-index',
+    'sib' => 'application/x-sibelius',
     'sig' => 'application/pgp-signature',
     'silo' => 'model/mesh',
     'sis' => 'application/vnd.symbian.install',
@@ -986,6 +1019,7 @@ module Marcel
     'src' => 'application/x-wais-source',
     'srf' => 'image/x-raw-sony',
     'srl' => 'application/sereal',
+    'srt' => 'application/x-subrip',
     'srx' => 'application/sparql-results+xml',
     'ss7' => 'application/x-sas-program-data',
     'sse' => 'application/vnd.kodak-descriptor',
@@ -1043,6 +1077,7 @@ module Marcel
     'tk' => 'text/x-tcl',
     'tld' => 'text/plain',
     'tmo' => 'application/vnd.tmobile-livetv',
+    'tmx' => 'application/x-tmx',
     'toast' => 'application/x-roxio-toast',
     'torrent' => 'application/x-bittorrent',
     'tpl' => 'application/vnd.groove-tool-template',
@@ -1054,12 +1089,14 @@ module Marcel
     'tsv' => 'text/tab-separated-values',
     'ttc' => 'application/x-font-ttf',
     'ttf' => 'application/x-font-ttf',
+    'ttml' => 'application/ttml+xml',
     'twd' => 'application/vnd.simtech-mindmapper',
     'twds' => 'application/vnd.simtech-mindmapper',
     'txd' => 'application/vnd.genomatix.tuxedo',
     'txf' => 'application/vnd.mobius.txf',
     'txt' => 'text/plain',
     'types' => 'text/plain',
+    'tzx' => 'application/x-spectrum-tzx',
     'u32' => 'application/x-authorware-bin',
     'uc2' => 'application/x-uc2-compressed',
     'udeb' => 'application/x-debian-package',
@@ -1083,6 +1120,7 @@ module Marcel
     'vcs' => 'text/x-vcalendar',
     'vcx' => 'application/vnd.vcx',
     'vda' => 'image/x-tga',
+    'vf' => 'application/x-tex-virtual-font',
     'vhd' => 'text/x-vhdl',
     'vhdl' => 'text/x-vhdl',
     'vis' => 'application/vnd.visionary',
@@ -1112,6 +1150,7 @@ module Marcel
     'wad' => 'application/x-doom',
     'war' => 'application/x-tika-java-web-archive',
     'warc' => 'application/warc',
+    'warc.gz' => 'application/warc+gz',
     'wasm' => 'application/wasm',
     'wav' => 'audio/vnd.wave',
     'wax' => 'audio/x-ms-wax',
@@ -1125,6 +1164,7 @@ module Marcel
     'wdb' => 'application/vnd.ms-works',
     'webarchive' => 'application/x-webarchive',
     'webm' => 'video/webm',
+    'webmanifest' => 'application/manifest+json',
     'webp' => 'image/webp',
     'wk1' => 'application/vnd.lotus-1-2-3',
     'wk2' => 'application/vnd.lotus-1-2-3',
@@ -1246,6 +1286,7 @@ module Marcel
     'xz' => 'application/x-xz',
     'y' => 'text/x-yacc',
     'yaml' => 'text/x-yaml',
+    'yml' => 'text/x-yaml',
     'z' => 'application/x-compress',
     'zaz' => 'application/vnd.zzazz.deck+xml',
     'zip' => 'application/zip',
@@ -1253,7 +1294,7 @@ module Marcel
     'zirz' => 'application/vnd.zul',
     'zmm' => 'application/vnd.handheld-entertainment+xml',
     'zoo' => 'application/x-zoo',
-    'zstd' => 'application/zstd',
+    'zst' => 'application/zstd',
   }
   # @private
   # :nodoc:
@@ -1281,6 +1322,7 @@ module Marcel
     'application/fits' => %w(fits fit fts), # Flexible Image Transport System
     'application/font-tdpfr' => %w(pfr),
     'application/gzip' => %w(gz tgz), # Gzip Compressed Archive
+    'application/hwp+zip' => %w(hwpx), # Hangul Word Processor File, zip based
     'application/hyperstudio' => %w(stk),
     'application/illustrator' => %w(ai), # Adobe Illustrator Artwork
     'application/java-archive' => %w(jar), # Java Archive
@@ -1291,6 +1333,7 @@ module Marcel
     'application/lost+xml' => %w(lostxml),
     'application/mac-binhex40' => %w(hqx),
     'application/mac-compactpro' => %w(cpt),
+    'application/manifest+json' => %w(webmanifest), # Web Application Manifest file
     'application/marc' => %w(mrc),
     'application/mathematica' => %w(ma nb mb), # Wolfram Mathematica
     'application/mathml+xml' => %w(mathml),
@@ -1309,7 +1352,7 @@ module Marcel
     'application/onenote;format=onetoc2' => %w(onetoc onetoc2), # OneNote Table of Contents
     'application/patch-ops-error+xml' => %w(xer),
     'application/pdf' => %w(pdf), # Portable Document Format
-    'application/pgp-encrypted' => %w(pgp),
+    'application/pgp-encrypted' => %w(pgp gpg),
     'application/pgp-signature' => %w(asc sig),
     'application/pics-rules' => %w(prf),
     'application/pkcs10' => %w(p10),
@@ -1349,6 +1392,7 @@ module Marcel
     'application/srgs+xml' => %w(grxml),
     'application/ssml+xml' => %w(ssml),
     'application/timestamped-data' => %w(tsd),
+    'application/ttml+xml' => %w(ttml),
     'application/vnd.3gpp.pic-bw-large' => %w(plb),
     'application/vnd.3gpp.pic-bw-small' => %w(psb),
     'application/vnd.3gpp.pic-bw-var' => %w(pvb),
@@ -1361,6 +1405,7 @@ module Marcel
     'application/vnd.adobe.aftereffects.project' => %w(aep),
     'application/vnd.adobe.aftereffects.template' => %w(aet),
     'application/vnd.adobe.air-application-installer-package+zip' => %w(air),
+    'application/vnd.adobe.indesign-idml-package' => %w(idml), # IDML
     'application/vnd.adobe.xdp+xml' => %w(xdp),
     'application/vnd.adobe.xfdf' => %w(xfdf),
     'application/vnd.airzip.filesecure.azf' => %w(azf),
@@ -1477,6 +1522,7 @@ module Marcel
     'application/vnd.ipunplugged.rcprofile' => %w(rcprofile),
     'application/vnd.irepository.package+xml' => %w(irp),
     'application/vnd.is-xpr' => %w(xpr),
+    'application/vnd.isac.fcs' => %w(fcs), # Flow Cytometry Standard File
     'application/vnd.jam' => %w(jam),
     'application/vnd.java.hprof ' => %w(hprof), # Java hprof text file
     'application/vnd.java.hprof.text' => %w(hprof.txt), # Java hprof text file
@@ -1562,6 +1608,7 @@ module Marcel
     'application/vnd.ms-works' => %w(wps wks wcm wdb),
     'application/vnd.ms-wpl' => %w(wpl),
     'application/vnd.ms-xpsdocument' => %w(xps oxps), # Open XML Paper Specification
+    'application/vnd.msa-disk-image' => %w(msa), # Magic Shadow Archiver
     'application/vnd.mseq' => %w(mseq),
     'application/vnd.musician' => %w(mus),
     'application/vnd.muvee.style' => %w(msty),
@@ -1663,6 +1710,7 @@ module Marcel
     'application/vnd.syncml.dm+xml' => %w(xdm),
     'application/vnd.tao.intent-module-archive' => %w(tao),
     'application/vnd.tcpdump.pcap' => %w(pcap cap dmp), # TCPDump pcap packet capture
+    'application/vnd.tcpdump.pcapng' => %w(pcapng), # TCPDump next gen pcap packet capture
     'application/vnd.tmobile-livetv' => %w(tmo),
     'application/vnd.trid.tpt' => %w(tpt),
     'application/vnd.triscape.mxs' => %w(mxs),
@@ -1698,6 +1746,7 @@ module Marcel
     'application/vnd.zzazz.deck+xml' => %w(zaz),
     'application/voicexml+xml' => %w(vxml),
     'application/warc' => %w(warc), # WARC
+    'application/warc+gz' => %w(warc.gz), # WARC
     'application/wasm' => %w(wasm), # Web Assembly
     'application/winhlp' => %w(hlp),
     'application/wsdl+xml' => %w(wsdl),
@@ -1707,10 +1756,12 @@ module Marcel
     'application/x-ace-compressed' => %w(ace),
     'application/x-adobe-indesign' => %w(indd), # Adobe InDesign document
     'application/x-adobe-indesign-interchange' => %w(inx), # Adobe InDesign Interchange format
+    'application/x-amiga-disk-format' => %w(adf), # Amiga Disk File
     'application/x-apple-diskimage' => %w(dmg),
     'application/x-appleworks' => %w(cwk),
     'application/x-archive' => %w(ar a),
     'application/x-arj' => %w(arj),
+    'application/x-asprs' => %w(las laz), # ASPRS Lidar Data Exchange Format
     'application/x-authorware-bin' => %w(aab x32 u32 vox),
     'application/x-authorware-map' => %w(aam),
     'application/x-authorware-seg' => %w(aas),
@@ -1722,6 +1773,7 @@ module Marcel
     'application/x-brotli' => %w(br brotli),
     'application/x-bzip' => %w(bz tbz),
     'application/x-bzip2' => %w(bz2 tbz2 boz), # Bzip 2 UNIX Compressed File
+    'application/x-cdf' => %w(cda), # CD Audio
     'application/x-cdlink' => %w(vcd), # Virtual CD-ROM CD Image File
     'application/x-chat' => %w(chat),
     'application/x-chess-pgn' => %w(pgn),
@@ -1739,10 +1791,13 @@ module Marcel
     'application/x-dtbncx+xml' => %w(ncx),
     'application/x-dtbook+xml' => %w(dtb),
     'application/x-dtbresource+xml' => %w(res),
+    'application/x-dvd-ifo' => %w(ifo bup), # DVD information file
     'application/x-dvi' => %w(dvi), # TeX Device Independent Document
     'application/x-elc' => %w(elc), # Emacs Lisp bytecode
     'application/x-endnote-refer' => %w(enw enr),
+    'application/x-endnote-style' => %w(ens),
     'application/x-erdas-hfa' => %w(hfa),
+    'application/x-esri-layer' => %w(lyr), # ESRI Layer file
     'application/x-fictionbook+xml' => %w(fb2), # FictionBook document
     'application/x-filemaker' => %w(fp7), # FileMaker Pro 7
     'application/x-font-adobe-metric' => %w(afm acfm amfm), # Adobe Font Metric
@@ -1760,6 +1815,7 @@ module Marcel
     'application/x-gnumeric' => %w(gnumeric),
     'application/x-grib' => %w(grb grb1 grb2), # General Regularly-distributed Information in Binary form
     'application/x-gtar' => %w(gtar), # GNU tar Compressed File Archive (GNU Tape Archive)
+    'application/x-guitar-pro' => %w(gp4), # Guitar Pro
     'application/x-hdf' => %w(hdf he5 h5), # Hierarchical Data Format File
     'application/x-ibooks+zip' => %w(ibooks), # Apple iBooks Author publication format
     'application/x-internet-archive' => %w(arc), # ARC
@@ -1768,6 +1824,7 @@ module Marcel
     'application/x-java-jnilib' => %w(jnilib), # Java Native Library for OSX
     'application/x-java-jnlp-file' => %w(jnlp),
     'application/x-java-pack200' => %w(pack),
+    'application/x-jeol-jdf' => %w(jdf), # JDF NMR Spectroscopy
     'application/x-killustrator' => %w(kil), # KIllustrator File
     'application/x-latex' => %w(latex), # LaTeX Source Document
     'application/x-lz4' => %w(lz4), # Second match Legacy Frame
@@ -1795,6 +1852,7 @@ module Marcel
     'application/x-mswrite' => %w(wri),
     'application/x-mysql-misam-compressed-index' => %w(myi), # MySQL MISAM Compressed Index
     'application/x-mysql-misam-data' => %w(myd), # MySQL MISAM Data
+    'application/x-nesrom' => %w(nes), # Nintendo Entertainment System ROM
     'application/x-netcdf' => %w(nc cdf),
     'application/x-parquet' => %w(parquet),
     'application/x-pkcs12' => %w(p12 pfx),
@@ -1833,22 +1891,28 @@ module Marcel
     'application/x-shapefile' => %w(shp), # ESRI Shapefiles
     'application/x-shar' => %w(shar),
     'application/x-shockwave-flash' => %w(swf), # Adobe Flash
+    'application/x-sibelius' => %w(sib), # Sibelius
     'application/x-silverlight-app' => %w(xap),
     'application/x-snappy-framed' => %w(sz), # Snappy Framed
+    'application/x-spectrum-tzx' => %w(tzx), # TAP (ZX Spectrum)
+    'application/x-spss-sav' => %w(sav), # SPSS Data File
     'application/x-staroffice-template' => %w(vor),
     'application/x-stata-do' => %w(do), # Stata DTA Script
     'application/x-stata-dta' => %w(dta), # Stata DTA Dataset
     'application/x-stuffit' => %w(sit),
     'application/x-stuffitx' => %w(sitx),
+    'application/x-subrip' => %w(srt), # SubRip (srt) subtitles
     'application/x-sv4cpio' => %w(sv4cpio),
     'application/x-sv4crc' => %w(sv4crc),
     'application/x-tar' => %w(tar),
     'application/x-tex' => %w(tex), # TeX Source
     'application/x-tex-tfm' => %w(tfm),
+    'application/x-tex-virtual-font' => %w(vf), # TeX Virtual Font format
     'application/x-texinfo' => %w(texinfo texi),
     'application/x-tika-java-enterprise-archive' => %w(ear),
     'application/x-tika-java-web-archive' => %w(war),
     'application/x-tika-msworks-spreadsheet' => %w(xlr),
+    'application/x-tmx' => %w(tmx), # TMX Translation Memory
     'application/x-uc2-compressed' => %w(uc2),
     'application/x-ustar' => %w(ustar),
     'application/x-vmdk' => %w(vmdk), # Virtual Disk Format
@@ -1875,7 +1939,7 @@ module Marcel
     'application/xspf+xml' => %w(xspf), # XML Shareable Playlist Format
     'application/xv+xml' => %w(mxml xhvml xvml xvm),
     'application/zip' => %w(zip), # Compressed Archive File
-    'application/zstd' => %w(zstd), # https://tools.ietf.org/id/draft-kucherawy-dispatch-zstd-01.html
+    'application/zstd' => %w(zst), # https://tools.ietf.org/id/draft-kucherawy-dispatch-zstd-01.html
     'audio/ac3' => %w(ac3), # Dolby Digital Audio Compression File
     'audio/adpcm' => %w(adp),
     'audio/amr' => %w(amr),
@@ -1908,6 +1972,8 @@ module Marcel
     'audio/x-ms-wma' => %w(wma),
     'audio/x-pn-realaudio' => %w(ram ra), # Real Audio
     'audio/x-pn-realaudio-plugin' => %w(rmp), # RealMedia Player Plug-in
+    'audio/x-psf' => %w(psf1 psflib minipsf minipsf1 gslib minigsf), # Portable Sound Format
+    'audio/x-sap' => %w(sap), # Slight Atari Player
     'chemical/x-cdx' => %w(cdx),
     'chemical/x-cif' => %w(cif),
     'chemical/x-cmdf' => %w(cmdf),
@@ -1932,6 +1998,7 @@ module Marcel
     'image/jpeg' => %w(jpg jpeg jpe jif jfif jfi), # Joint Photographic Experts Group
     'image/jpm' => %w(jpm jpgm), # JPEG 2000 Part 6 (JPM)
     'image/jpx' => %w(jpf), # JPEG 2000 Part 2 (JPX)
+    'image/jxl' => %w(jxl), # JPEG XL
     'image/nitf' => %w(ntf nitf),
     'image/png' => %w(png), # Portable Network Graphics
     'image/prs.btif' => %w(btif),
@@ -1939,6 +2006,7 @@ module Marcel
     'image/tiff' => %w(tiff tif), # Tagged Image File Format
     'image/vnd.adobe.photoshop' => %w(psd), # Photoshop Image
     'image/vnd.adobe.premiere' => %w(ppj),
+    'image/vnd.dgn' => %w(dgn dgnlib cel),
     'image/vnd.djvu' => %w(djvu djv),
     'image/vnd.dwg' => %w(dwg), # AutoCad Drawing
     'image/vnd.dxb' => %w(dxb), # AutoCAD DXF simplified Binary
@@ -1957,7 +2025,10 @@ module Marcel
     'image/vnd.zbrush.pcx' => %w(pcx), # ZSoft Paintbrush PiCture eXchange
     'image/webp' => %w(webp),
     'image/wmf' => %w(wmf), # Windows Metafile
+    'image/x-3ds' => %w(3ds), # 3D Studio (V1)
     'image/x-bpg' => %w(bpg), # Better Portable Graphics
+    'image/x-canon-cr2' => %w(cr2), # Canon raw image, version 2, TIFF-based
+    'image/x-canon-cr3' => %w(cr3), # Canon raw image, version 3, Quicktime-based
     'image/x-cmu-raster' => %w(ras),
     'image/x-cmx' => %w(cmx),
     'image/x-dpx' => %w(dpx), # Digital Picture Exchange from SMPTE
@@ -1971,7 +2042,7 @@ module Marcel
     'image/x-portable-graymap' => %w(pgm), # Portable Graymap Graphic
     'image/x-portable-pixmap' => %w(ppm), # UNIX Portable Bitmap Graphic
     'image/x-raw-adobe' => %w(dng), # Adobe Digital Negative
-    'image/x-raw-canon' => %w(crw cr2), # Canon raw image
+    'image/x-raw-canon' => %w(crw), # Canon raw image
     'image/x-raw-casio' => %w(bay), # Casio raw image
     'image/x-raw-epson' => %w(erf), # Epson raw image
     'image/x-raw-fuji' => %w(raf), # Fuji raw image
@@ -1999,6 +2070,7 @@ module Marcel
     'image/x-xwindowdump' => %w(xwd), # X Windows Dump
     'message/rfc822' => %w(eml mime),
     'message/x-emlx' => %w(emlx),
+    'model/e57' => %w(e57), # 3d imaging data exchange
     'model/iges' => %w(igs iges), # Initial Graphics Exchange Specification Format
     'model/mesh' => %w(msh mesh silo),
     'model/vnd.dwf' => %w(dwf), # AutoCAD Design Web Format
@@ -2070,7 +2142,7 @@ module Marcel
     'text/x-haml' => %w(haml), # HAML source code
     'text/x-haskell' => %w(hs lhs), # Haskell source code
     'text/x-haxe' => %w(hx), # Haxe source code
-    'text/x-idl' => %w(idl), # Inteface Definition Language
+    'text/x-idl' => %w(idl), # Interface Definition Language
     'text/x-ini' => %w(ini), # Configuration file
     'text/x-java-properties' => %w(properties), # Java Properties
     'text/x-java-source' => %w(java), # Java source code
@@ -2111,7 +2183,7 @@ module Marcel
     'text/x-vhdl' => %w(vhd vhdl), # VHDL source code
     'text/x-web-markdown' => %w(md mdtext mkd markdown), # Markdown source code
     'text/x-yacc' => %w(y), # Yacc/Bison source code
-    'text/x-yaml' => %w(yaml), # YAML source code
+    'text/x-yaml' => %w(yaml yml), # YAML source code
     'video/3gpp' => %w(3gp),
     'video/3gpp2' => %w(3g2),
     'video/h261' => %w(h261),
@@ -2155,10 +2227,12 @@ module Marcel
     'application/dita+xml;format=map' => %w(application/dita+xml),
     'application/dita+xml;format=topic' => %w(application/dita+xml),
     'application/dita+xml;format=val' => %w(application/dita+xml),
-    'application/illustrator' => %w(application/postscript),
+    'application/hwp+zip' => %w(application/zip),
+    'application/illustrator' => %w(application/pdf),
     'application/java-archive' => %w(application/zip),
     'application/javascript' => %w(text/plain),
     'application/json' => %w(application/javascript),
+    'application/manifest+json' => %w(application/json),
     'application/mathematica' => %w(text/plain),
     'application/mbox' => %w(text/x-tika-text-based-message),
     'application/mp4' => %w(application/quicktime),
@@ -2171,6 +2245,8 @@ module Marcel
     'application/rtf' => %w(text/plain),
     'application/sldworks' => %w(application/x-tika-msoffice),
     'application/smil+xml' => %w(application/xml),
+    'application/ttml+xml' => %w(application/xml),
+    'application/vnd.adobe.indesign-idml-package' => %w(application/zip),
     'application/vnd.adobe.xdp+xml' => %w(application/xml),
     'application/vnd.adobe.xfdf' => %w(application/xml),
     'application/vnd.android.package-archive' => %w(application/java-archive),
@@ -2211,11 +2287,27 @@ module Marcel
     'application/vnd.ms-word.template.macroenabled.12' => %w(application/x-tika-ooxml),
     'application/vnd.ms-works' => %w(application/x-tika-msoffice),
     'application/vnd.ms-xpsdocument' => %w(application/x-tika-ooxml),
+    'application/vnd.oasis.opendocument.chart' => %w(application/zip),
+    'application/vnd.oasis.opendocument.chart-template' => %w(application/zip),
     'application/vnd.oasis.opendocument.flat.presentation' => %w(application/vnd.oasis.opendocument.tika.flat.document),
     'application/vnd.oasis.opendocument.flat.spreadsheet' => %w(application/vnd.oasis.opendocument.tika.flat.document),
     'application/vnd.oasis.opendocument.flat.text' => %w(application/vnd.oasis.opendocument.tika.flat.document),
     'application/vnd.oasis.opendocument.formula' => %w(application/zip),
+    'application/vnd.oasis.opendocument.formula-template' => %w(application/zip),
+    'application/vnd.oasis.opendocument.graphics' => %w(application/zip),
+    'application/vnd.oasis.opendocument.graphics-template' => %w(application/zip),
+    'application/vnd.oasis.opendocument.image' => %w(application/zip),
+    'application/vnd.oasis.opendocument.image-template' => %w(application/zip),
+    'application/vnd.oasis.opendocument.presentation' => %w(application/zip),
+    'application/vnd.oasis.opendocument.presentation-template' => %w(application/zip),
+    'application/vnd.oasis.opendocument.spreadsheet' => %w(application/zip),
+    'application/vnd.oasis.opendocument.spreadsheet-template' => %w(application/zip),
+    'application/vnd.oasis.opendocument.text' => %w(application/zip),
+    'application/vnd.oasis.opendocument.text-master' => %w(application/zip),
+    'application/vnd.oasis.opendocument.text-template' => %w(application/zip),
+    'application/vnd.oasis.opendocument.text-web' => %w(application/zip),
     'application/vnd.openofficeorg.autotext' => %w(application/zip),
+    'application/vnd.openofficeorg.extension' => %w(application/zip),
     'application/vnd.openxmlformats-officedocument.presentationml.presentation' => %w(application/x-tika-ooxml),
     'application/vnd.openxmlformats-officedocument.presentationml.slide' => %w(application/x-tika-ooxml),
     'application/vnd.openxmlformats-officedocument.presentationml.slideshow' => %w(application/x-tika-ooxml),
@@ -2237,6 +2329,7 @@ module Marcel
     'application/x-corelpresentations' => %w(application/x-tika-msoffice),
     'application/x-debian-package' => %w(application/x-archive),
     'application/x-dosexec' => %w(application/x-msdownload),
+    'application/x-esri-layer' => %w(application/x-tika-msoffice),
     'application/x-fictionbook+xml' => %w(application/xml),
     'application/x-gtar' => %w(application/x-tar),
     'application/x-ibooks+zip' => %w(application/epub+zip),
@@ -2260,10 +2353,12 @@ module Marcel
     'application/x-sfdu' => %w(text/plain),
     'application/x-sh' => %w(text/plain),
     'application/x-staroffice-template' => %w(application/x-tika-staroffice),
+    'application/x-subrip' => %w(text/plain),
     'application/x-tex' => %w(text/plain),
     'application/x-tika-java-enterprise-archive' => %w(application/java-archive),
     'application/x-tika-java-web-archive' => %w(application/java-archive),
     'application/x-tika-msworks-spreadsheet' => %w(application/vnd.ms-excel),
+    'application/x-tmx' => %w(application/xml),
     'application/x-webarchive' => %w(application/x-bplist),
     'application/x-x509-cert;format=der' => %w(application/x-x509-cert),
     'application/x-x509-cert;format=pem' => %w(application/x-x509-cert),
@@ -2285,6 +2380,8 @@ module Marcel
     'image/jpx' => %w(image/x-jp2-container),
     'image/svg+xml' => %w(application/xml),
     'image/vnd.adobe.premiere' => %w(application/xml),
+    'image/x-canon-cr2' => %w(image/tiff),
+    'image/x-canon-cr3' => %w(video/quicktime),
     'image/x-emf-compressed' => %w(application/gzip),
     'image/x-portable-bitmap' => %w(image/x-portable-anymap),
     'image/x-portable-graymap' => %w(image/x-portable-anymap),
@@ -2399,8 +2496,8 @@ module Marcel
     ['image/bmp', [[0, b['BM'], [[26, b["\001\000"], [[28, b["\000\000"]], [28, b["\001\000"]], [28, b["\004\000"]], [28, b["\b\000"]], [28, b["\020\000"]], [28, b["\030\000"]], [28, b[" \000"]]]]]]]],
     ['image/vnd.adobe.photoshop', [[0, b["8BPS\000\001"]], [0, b["8BPS\000\002"]]]],
     ['image/webp', [[0, b['RIFF'], [[8, b['WEBP']]]]]],
-    ['text/html', [[0..64, b['<!DOCTYPE HTML']], [0..64, b['<!DOCTYPE html']], [0..64, b['<!doctype HTML']], [0..64, b['<!doctype html']], [0..64, b['<HEAD']], [0..64, b['<head']], [0..64, b['<TITLE']], [0..64, b['<title']], [0..64, b['<HTML']], [0, b['<BODY']], [0, b['<body']], [0, b['<DIV']], [0, b['<div']], [0, b['<TITLE']], [0, b['<title']], [0, b['<h1']], [0, b['<H1']], [0..128, b['<html']]]],
-    ['image/svg+xml', [[0..4096, b['<svg']]]],
+    ['text/html', [[0, b['(?i)<(html|head|body|title|div)[ >]']], [0, b['(?i)<h[123][ >]']]]],
+    ['image/svg+xml', [[0, b['<svg'], [[5..256, b['http://www.w3.org/2000/svg']]]]]],
     ['video/x-msvideo', [[0, b['RIFF'], [[8, b['AVI ']]]], [8, b['AVI ']]]],
     ['video/x-ms-wmv', [[0..8192, b['Windows Media Video']], [0..8192, b['VC-1 Advanced Profile']], [0..8192, b['wmv2']]]],
     ['video/mp4', [[4, b['ftypmp41']], [4, b['ftypmp42']]]],
@@ -2410,7 +2507,7 @@ module Marcel
     ['video/webm', [[0, b["\032E\337\243"], [[4..4096, b["B\202"], [[4..4096, b['webm'], [[4..4096, b['V_VP8']], [4..4096, b['V_VP9']]]]]]]]]],
     ['video/x-matroska', [[0, b["\032E\337\243\223B\202\210matroska"]]]],
     ['video/x-flv', [[0, b['FLV']]]],
-    ['audio/mpeg', [[0, b["\377\362"]], [0, b["\377\363"]], [0, b["\377\364"]], [0, b["\377\365"]], [0, b["\377\366"]], [0, b["\377\367"]], [0, b["\377\372"]], [0, b["\377\373"]], [0, b["\377\374"]], [0, b["\377\375"]], [0, b["\377\377"]], [0, b['ID3']]]],
+    ['audio/mpeg', [[0, b["\377\362"]], [0, b["\377\363"]], [0, b["\377\364"]], [0, b["\377\365"]], [0, b["\377\366"]], [0, b["\377\367"]], [0, b["\377\372"]], [0, b["\377\373"]], [0, b["\377\374"]], [0, b["\377\375"]], [0, b["\377\343"]], [0, b["\377\377"]], [0, b['ID3']], [0, b["(?:\\\\015\\\\012|\\\\000{1,1024})(?:\\\\377[\\\\343\\\\362\\\\363\\\\364\\\\365\\\\366\\\\367\\\\370\\\\371\\\\372\\\\373\\\\374\\\\375\\\\376\\\\377]|ID3)"]]]],
     ['application/pdf', [[0, b['%PDF-']], [0, b["\357\273\277%PDF-"]]]],
     ['application/msword', [[2080, b['Microsoft Word 6.0 Document']], [2080, b['Documento Microsoft Word 6']], [2112, b['MSWordDoc']], [0, b["1\276\000\000"]], [0, b['PO^Q`']], [0, b["\3767\000#"]], [0, b["\333\245-\000\000\000"]], [0, b["\224\246."]], [0..8, b["\320\317\021\340\241\261\032\341"], [[1152..4096, b["W\000o\000r\000d\000D\000o\000c\000u\000m\000e\000n\000t"]]]]]],
     ['application/vnd.openxmlformats-officedocument.wordprocessingml.document', [[0, b["PK\003\004"], [[30..65536, b['[Content_Types].xml'], [[0..4096, b['word/']]]], [30, b['_rels/.rels'], [[0..4096, b['word/']]]]]]]],
@@ -2422,12 +2519,16 @@ module Marcel
     ['image/x-tga', [[1, b["\001\001\000\000"], [[8, b[".*[\\\\124\\\\122\\\\125\\\\105\\\\126\\\\111\\\\123\\\\111\\\\117\\\\116\\\\055\\\\130\\\\106\\\\111\\\\114\\\\105\\\\056\\\\000]"]]]], [1, b["\000\002\000\000"], [[8, b[".*[\\\\124\\\\122\\\\125\\\\105\\\\126\\\\111\\\\123\\\\111\\\\117\\\\116\\\\055\\\\130\\\\106\\\\111\\\\114\\\\105\\\\056\\\\000]"]]]], [1, b["\000\003\000\000"], [[8, b[".*[\\\\124\\\\122\\\\125\\\\105\\\\126\\\\111\\\\123\\\\111\\\\117\\\\116\\\\055\\\\130\\\\106\\\\111\\\\114\\\\105\\\\056\\\\000]"]]]]]],
     ['application/x-endnote-refer', [[0..50, b['%A '], [[0..1000, b["\n%D "], [[0..1000, b["\n%T "]]]]]]]],
     ['application/x-ms-owner', [[0, b["(?s)^([\\\\005-\\\\017])[\\\\000\\\\040-\\\\176]{10}.{43}\\\\1\\000"]]]],
+    ['application/x-tmx', [[0..256, b['<tmx']]]],
     ['application/mbox', [[0, b['From '], [[32..256, b["\nFrom: "]], [32..256, b["\nDate: "]], [32..256, b["\nSubject: "]], [32..256, b["\nDelivered-To: "]], [32..256, b["\nReceived: by "]], [32..256, b["\nReceived: via "]], [32..256, b["\nReceived: from "]], [32..256, b["\nMime-Version: "]], [32..256, b["\nX-"], [[32..8192, b["\nFrom: "]], [32..8192, b["\nDate: "]], [32..8192, b["\nSubject: "]], [32..8192, b["\nDelivered-To: "]], [32..8192, b["\nReceived: by "]], [32..8192, b["\nReceived: via "]], [32..8192, b["\nReceived: from "]], [32..8192, b["\nMime-Version: "]]]]]]]],
     ['application/x-bplist', [[0, b["bplist\000\000"]], [0, b["bplist\000\001"]], [0, b["bplist@\000"]], [0, b['bplist00']], [0, b['bplist01']], [0, b['bplist10']], [0, b['bplist15']], [0, b['bplist16']]]],
+    ['application/x-dvd-ifo', [[0, b['DVDVIDEO-VTS']], [0, b['DVDVIDEO-VMG']]]],
+    ['application/x-ebu-stl', [[3, b['STL'], [[8, b['.01']]]]]],
     ['application/x-ms-nls', [[0, b["(?s)^\\\\015.{51}\\\\014\\\\000\\\\015\\\\000\\\\016"]], [0, b["(?s)^\\\\104\\\\103.\\\\001"]]]],
     ['message/x-emlx', [[2..9, b["\nRelay-Version:"]], [2..9, b["\n#! rnews"]], [2..9, b["\nN#! rnews"]], [2..9, b["\nForward to"]], [2..9, b["\nPipe to"]], [2..9, b["\nReturn-Path:"]], [2..9, b["\nFrom:"]], [2..9, b["\nReceived:"]], [2..9, b["\nMessage-ID:"]], [2..9, b["\nDate:"]]]],
     ['application/cbor', [[0, b["\331\331\367"]]]],
     ['application/coreldraw', [[0, b['RIFF'], [[8, b['CDR']], [8, b['cdr']], [8, b['DES']], [8, b['des']]]]]],
+    ['application/illustrator+ps', [[0..8192, b["[\\r\\n]%AI5_FileFormat [1-4][\\r\\n]"]]]],
     ['application/vnd.etsi.asic-e+zip', [[0, b["PK\003\004"], [[30, b['mimetypeapplication/vnd.etsi.asic-e+zip']]]]]],
     ['application/vnd.etsi.asic-s+zip', [[0, b["PK\003\004"], [[30, b['mimetypeapplication/vnd.etsi.asic-s+zip']]]]]],
     ['application/vnd.ms-excel.sheet.2', [[0, b["\t\000\004\000"], [[4, b["\000\000\020\000"]], [4, b["\000\000 \000"]], [4, b["\000\000@\000"]]]]]],
@@ -2435,6 +2536,8 @@ module Marcel
     ['application/vnd.ms-excel.sheet.4', [[0, b["\t\004\006\000"], [[4, b["\000\000\020\000"]], [4, b["\000\000 \000"]], [4, b["\000\000@\000"]]]]]],
     ['application/vnd.ms-excel.workspace.3', [[0, b["\t\002\006\000"], [[4, b["\000\000\000\001"]]]]]],
     ['application/vnd.ms-excel.workspace.4', [[0, b["\t\004\006\000"], [[4, b["\000\000\000\001"]]]]]],
+    ['application/warc', [[0, b['WARC/']]]],
+    ['application/x-activemime', [[0, b["ActiveMime\000\000"]]]],
     ['application/x-axcrypt', [[0, b["\300\271\a.O\223\361F\240\025y,\241\331\350!"], [[17, b["\000\000\000\002"]]]]]],
     ['application/x-berkeley-db;format=btree;version=2', [[12, b["b1\005\000"], [[16, b["\006\000\000\000"]]]], [12, b["\000\0051b"], [[16, b["\000\000\000\006"]]]], [12, b["b1\005\000"], [[16, b["\006\000\000\000"]]]]]],
     ['application/x-berkeley-db;format=btree;version=3', [[12, b["b1\005\000"], [[16, b["\b\000\000\000"]]]], [12, b["\000\0051b"], [[16, b["\000\000\000\b"]]]], [12, b["b1\005\000"], [[16, b["\b\000\000\000"]]]]]],
@@ -2446,6 +2549,7 @@ module Marcel
     ['application/x-bplist', [[0, b['bplist']]]],
     ['application/x-debian-package', [[0, b["!<arch>\ndebian-binary"]], [0, b["!<arch>\ndebian-split"]]]],
     ['application/x-font-type1', [[0, b["\200\001"], [[4, b["\000\000%!PS-AdobeFont"]]]], [0, b['%!PS-AdobeFont-1.0']]]],
+    ['application/x-httpresponse', [[0, b['HTTP/'], [[0..1000, b["\nCache-Control:"]], [0..1000, b["\nContent-Type:"]], [0..1000, b["\nContent-Length:"]], [0..1000, b["\nContent-Disposition:"]], [0..1000, b["\nDate:"]], [0..1000, b["\nServer:"]]]], [0, nil]]],
     ['application/x-internet-archive', [[0, b['filedesc://']]]],
     ['application/x-lz4', [[0, b["\004\"M\030"]], [0, b["\002!L\030"]]]],
     ['application/x-mobipocket-ebook', [[0..60, b['BOOKMOBI']]]],
@@ -2476,7 +2580,10 @@ module Marcel
     ['image/heic-sequence', [[4, b['ftyphevc']], [4, b['ftyphevx']]]],
     ['image/heif', [[4, b['ftypmif1']]]],
     ['image/heif-sequence', [[4, b['ftypmsf1']]]],
+    ['image/x-canon-cr2', [[0, b["MM\000*"], [[8, b['CR']]]], [0, b["II*\000"], [[8, b['CR']]]], [0, b["MM\000+"], [[8, b['CR']]]]]],
+    ['image/x-canon-cr3', [[4, b['ftypcrx ']]]],
     ['message/news', [[0, b['Path:']], [0, b['Xref:']]]],
+    ['model/e57', [[0, b['ASTM-E57']]]],
     ['model/vnd.dwf;version=2', [[0, b['(DWF V00.22)']]]],
     ['model/vnd.dwf;version=5', [[0, b['(DWF V00.55)']]]],
     ['model/vnd.dwf;version=6', [[0, b['(DWF V06.'], [[11, b[')PK']]]]]],
@@ -2492,6 +2599,7 @@ module Marcel
     ['video/x-oggyuv', [[0, b['OggS'], [[29, b['YUV']]]]]],
     ['video/x-ogm', [[0, b['OggS'], [[29, b['ideo']]]]]],
     ['application/x-msdownload;format=pe', [[0, b['MZ'], [[128, b["PE\000\000"]], [176, b["PE\000\000"]], [208, b["PE\000\000"]], [240, b["PE\000\000"]]]]]],
+    ['text/x-robots', [[0, nil, [[0, nil, [[0, b['user-agent:']], [0, b['sitemap:']]]], [0, nil, [[0..1000, b["\nuser-agent:"]], [0..1000, b["\nallow:"]], [0..1000, b["\ndisallow:"]], [0..1000, b["\nsitemap:"]]]]]]]],
     ['application/applefile', [[0, b["\000\005\026\000"]]]],
     ['application/dash+xml', [[0, b['<MPD']]]],
     ['application/dicom', [[128, b['DICM']]]],
@@ -2499,6 +2607,7 @@ module Marcel
     ['application/fits', [[0, b['SIMPLE  =                    T']], [0, b['SIMPLE  =                T']]]],
     ['application/javascript', [[0, b['/* jQuery ']], [0, b['/*! jQuery ']], [0, b['/*!'], [[4..8, b['* jQuery ']]]], [0, b['(function(e,undefined){']], [0, b['!function(window,undefined){']], [0, b['/*  Prototype JavaScript ']], [0, b['var Prototype={']], [0, b['function $w(t){']], [0, b['/** @license React']], [0, b['/**'], [[4..8, b['* React ']]]]]],
     ['application/mac-binhex40', [[11, b['must be converted with BinHex']]]],
+    ['application/marc', [[0, b['[0-9]{5,5}'], [[20, b['45'], [[5, b['[acdnp][acdefgijkmoprt][abcdims]']], [5, b['[acdnosx]z']], [5, b['[cdn][uvxy]']], [5, b['[acdn]w']], [5, b['[cdn]q']]]]]]]],
     ['application/mathematica', [[0, b['(**']], [0, b['(* ']]]],
     ['application/msword', [[0..8, b["\320\317\021\340\241\261\032\341"], [[546, b['jbjb']], [546, b['bjbj']]]]]],
     ['application/msword2', [[0, b["\233\245"]], [0, b["\333\245"]]]],
@@ -2507,6 +2616,7 @@ module Marcel
     ['application/ogg', [[0, b['OggS']]]],
     ['application/onenote;format=one', [[0, b["\344R\\{"], [[4, b["\214\330"], [[6, b["\247M"], [[8, b['0xAEB15378D02996D3']]]]]]]]]],
     ['application/onenote;format=onetoc2', [[0, b["\241/\377C"], [[4, b["\331\357"], [[6, b['vL'], [[8, b['0x9EE210EA5722765F']]]]]]]]]],
+    ['application/pgp-encrypted', [[0, b["\205"], [[3, b["\003"]]]]]],
     ['application/pkcs7-signature', [[0, b['-----BEGIN PKCS7']], [0, b['0x3080'], [[0, b["\006\t*\206H\206\367\r\001\a"], [[11, b["\240"]]]]]], [0, b['0x3081'], [[0, b["\006\t*\206H\206\367\r\001\a"], [[11, b["\240"]]]]]], [0, b['0x3082'], [[0, b["\006\t*\206H\206\367\r\001\a"], [[11, b["\240"]]]]]], [0, b['0x3083'], [[0, b["\006\t*\206H\206\367\r\001\a"], [[11, b["\240"]]]]]], [0, b['0x3084'], [[0, b["\006\t*\206H\206\367\r\001\a"], [[11, b["\240"]]]]]]]],
     ['application/postscript', [[0, b['%!']], [0, b["\004%!"]], [0, b["\305\320\323\306"]], [0, b['%!PS-Adobe-3.0 EPSF-3.0']]]],
     ['application/rtf', [[0, b["{\\rtf"]]]],
@@ -2517,6 +2627,8 @@ module Marcel
     ['application/vnd.apple.mpegurl', [[0, b['#EXTM3U']]]],
     ['application/vnd.digilite.prolights', [[0, b["\177\fD+"]]]],
     ['application/vnd.fdf', [[0, b['%FDF-']]]],
+    ['application/vnd.iccprofile', [[36, b['acsp']]]],
+    ['application/vnd.isac.fcs', [[0, b["FCS[1-3]\\\\.[0-9]    "]]]],
     ['application/vnd.java.hprof ', [[0, b["JAVA PROFILE \\\\d\\\\.\\\\d\\\\.\\\\d\\\\u0000"]]]],
     ['application/vnd.java.hprof.text', [[0, b["JAVA PROFILE \\\\d\\\\.\\\\d\\\\.\\\\d,"]]]],
     ['application/vnd.lotus-1-2-3;version=1', [[0, b["\000\000\002\000\004\004"]]]],
@@ -2526,8 +2638,9 @@ module Marcel
     ['application/vnd.lotus-1-2-3;version=97+9.x', [[0, b["\000\000\032\000\003\020\004\000"]]]],
     ['application/vnd.lotus-wordpro', [[0, b["WordPro\000"]], [0, b["WordPro\r\373"]]]],
     ['application/vnd.mif', [[0, b['<MakerFile']], [0, b['<MIFFile']], [0, b['<MakerDictionary']], [0, b['<MakerScreenFont']], [0, b['<MML']], [0, b['<Book']], [0, b['<Maker']]]],
-    ['application/vnd.ms-cab-compressed', [[0, b["MSCF\000\000\000\000"]]]],
     ['application/vnd.ms-cab-compressed', [[0, b['MSCF']]]],
+    ['application/vnd.ms-cab-compressed', [[0, b["MSCF\000\000\000\000"]]]],
+    ['application/vnd.ms-fontobject', [[8, b["\002\000\002\000"], [[34, b['LP']]]]]],
     ['application/vnd.ms-htmlhelp', [[0, b['ITSF']]]],
     ['application/vnd.ms-outlook-pst', [[0, b['!BDN'], [[8, b['SM']]]]]],
     ['application/vnd.ms-tnef', [[0, b["x\237>\""]]]],
@@ -2556,6 +2669,7 @@ module Marcel
     ['application/vnd.sun.xml.writer', [[0, b['PK'], [[30, b['mimetypeapplication/vnd.sun.xml.writer']]]]]],
     ['application/vnd.symbian.install', [[8, b["\031\004\000\020"]]]],
     ['application/vnd.tcpdump.pcap', [[0, b["\241\262\303\324"]], [0, b["\324\303\262\241"]]]],
+    ['application/vnd.tcpdump.pcapng', [[0, b["\n\r\r\n"], [[8, b["\241\262\303\324"]], [8, b["M<+\032"]]]]]],
     ['application/vnd.wolfram.wl', [[0, b['#!/usr/bin/env wolframscript']]]],
     ['application/vnd.wordperfect', [[0, b['application/vnd.wordperfect;']]]],
     ['application/vnd.wordperfect;version=4.2', [[0, b["\313\n\001"], [[5, b["\313"]]]]]],
@@ -2563,13 +2677,15 @@ module Marcel
     ['application/vnd.wordperfect;version=5.1', [[0, b["\377WPC"], [[10, b["\000\001"]]]]]],
     ['application/vnd.wordperfect;version=6.x', [[0, b["\377WPC"], [[10, b["\002\001"]]]]]],
     ['application/vnd.xara', [[0, b['xar!']]]],
-    ['application/warc', [[0, b['WARC/']]]],
     ['application/wasm', [[0, b["\000asm"]], [0, b["msa\000"]]]],
     ['application/x-7z-compressed', [[0..1, b['7z'], [[2..5, b["\274\257'\034"]]]]]],
     ['application/x-adobe-indesign', [[0, b["\006\006\355\365\330\035F\345\2751\357\347\376t\267\035"]]]],
     ['application/x-adobe-indesign-interchange', [[0..100, b['<?aid']]]],
+    ['application/x-amiga-disk-format', [[0, b['DOS'], [[4, b["\000"]], [4, b["\001"]], [4, b["\002"]], [4, b["\003"]], [4, b["\004"]], [4, b["\005"]], [4, b["\006"]], [4, b["\a"]]]]]],
     ['application/x-archive', [[0, b['=<ar>']], [0, b["!<arch>\n"]]]],
     ['application/x-arj', [[0, b["`\352"]]]],
+    ['application/x-asprs', [[0, b['LASF'], [[24, b["\001\001"]], [24, b["\001\002"]]]]]],
+    ['application/x-atari-floppy-disk-image', [[0, b['0x9602'], [[4, b['0x8000'], [[11, b['0x00000000']]]], [4, b['0x0001'], [[11, b['0x00000000']]]]]]]],
     ['application/x-bat', [[0, b['@echo off']], [0, b['rem ']]]],
     ['application/x-berkeley-db;format=btree', [[0, b["b1\005\000"]], [0, b["\000\0051b"]], [0, b["b1\005\000"]], [12, b["b1\005\000"]], [12, b["\000\0051b"]], [12, b["b1\005\000"]]]],
     ['application/x-berkeley-db;format=hash', [[0, b["a\025\006\000"]], [0, b["\000\006\025a"]], [0, b["a\025\006\000"]], [12, b["a\025\006\000"]], [12, b["\000\006\025a"]], [12, b["a\025\006\000"]]]],
@@ -2577,6 +2693,7 @@ module Marcel
     ['application/x-berkeley-db;format=queue', [[12, b["S\"\004\000"]], [12, b["\000\004\"S"]], [12, b["S\"\004\000"]]]],
     ['application/x-bibtex-text-file', [[0, b['% BibTeX `']], [73, b['%%%  ']], [0, b['% BibTeX standard bibliography ']], [73, b['%%%  @BibTeX-style-file{']], [0, b['@article{']], [0, b['@book{']], [0, b['@inbook{']], [0, b['@incollection{']], [0, b['@inproceedings{']], [0, b['@manual{']], [0, b['@misc{']], [0, b['@preamble{']], [0, b['@phdthesis{']], [0, b['@string{']], [0, b['@techreport{']], [0, b['@unpublished{']]]],
     ['application/x-bittorrent', [[0, b['d8:announce']]]],
+    ['application/x-cdf', [[0, b["RIFF$\000\000\000CDDAfmt \030"]], [0, nil]]],
     ['application/x-chrome-package', [[0, b['Cr24']]]],
     ['application/x-compress', [[0, b["\037\235"]]]],
     ['application/x-coredump', [[0, b["\177ELF"], [[16, b["\004\000"]], [16, b["\000\004"]]]]]],
@@ -2585,33 +2702,44 @@ module Marcel
     ['application/x-dvi', [[0, b["\367\002"]], [0, b["\367\002"]], [14, b["\e TeX output "]]]],
     ['application/x-elc', [[0, b["\n("]], [0, b[";ELC\023\000\000\000"]]]],
     ['application/x-elf', [[0, b["\177ELF"]]]],
+    ['application/x-endnote-style', [[0, b["\000\b"], [[4, b["\000\000"], [[8, b['RSFTSTYL']], [8, b['ENDNENFT']]]]]]]],
     ['application/x-erdas-hfa', [[0, b['EHFA_HEADER_TAG']]]],
     ['application/x-executable', [[0, b["\177ELF"], [[16, b["\002\000"]], [16, b["\000\002"]]]]]],
+    ['application/x-fat-diskimage', [[0, b["\\353"], [[2, b["\\220"], [[14, b["(\\001|\\002|\\004|\\010|\\020|\\040\\100|x80)"]]]]]]]],
     ['application/x-filemaker', [[14, b["\300HBAM7"], [[525, b["HBAM2101OCT99\301\002H\aPro 7.0\300\300"]]]]]],
     ['application/x-foxmail', [[0, b["\020\020\020\020\020\020\020\021\021\021\021\021\021S"]]]],
     ['application/x-gnumeric', [[39, b['=<gmr:Workbook']]]],
     ['application/x-grib', [[0, b['GRIB']]]],
     ['application/x-gtar', [[257, b["ustar  \000"]]]],
+    ['application/x-guitar-pro', [[1, b['FICHIER GUITARE PRO ']], [1, b['FICHIER GUITAR PRO ']]]],
     ['application/x-hdf', [[0, b["\016\003\023\001"]], [0, b["\211HDF\r\n\032"]]]],
     ['application/x-hwp', [[0, b['HWP Document File V']]]],
     ['application/x-ibooks+zip', [[0, b["PK\003\004"], [[30, b['mimetypeapplication/x-ibooks+zip']]]]]],
+    ['application/x-idl-save-file', [[0, b["SR\000\004\000\000\000\n\000\000\004"]]]],
     ['application/x-isatab', [[1, b['Source Name']]]],
     ['application/x-isatab-assay', [[1, b['Sample Name']]]],
     ['application/x-isatab-investigation', [[0, b['ONTOLOGY SOURCE REFERENCE']]]],
     ['application/x-iso9660-image', [[32769, b['CD001']], [34817, b['CD001']], [36865, b['CD001']]]],
     ['application/x-java-jnilib', [[0, b["\312\376\272\276"], [[4096, b["\376\355\372\316"]], [4096, b["\376\355\372\317"]], [4096, b["\316\372\355\376"]], [4096, b["\317\372\355\376"]]]]]],
+    ['application/x-jeol-jdf', [[0, b['JEOL.NMR']], [0, b['RMN.LOEJ']]]],
+    ['application/x-jigdo', [[0, b['JigsawDownload template']]]],
     ['application/x-kdelnk', [[0, b['[KDE Desktop Entry]']], [0, b['# KDE Config File']]]],
     ['application/x-latex', [[0, b['% -*-latex-*-']]]],
     ['application/x-lha', [[2, b['-lzs-']], [2, b['-lh -']], [2, b['-lhd-']], [2, b['-lh2-']], [2, b['-lh3-']], [2, b['-lh4-']], [2, b['-lh5-']], [2, b['-lh6-']], [2, b['-lh7-']]]],
     ['application/x-lharc', [[2, b['-lh0-']], [2, b['-lh1-']], [2, b['-lz4-']], [2, b['-lz5-']]]],
     ['application/x-lzip', [[0, b['LZIP']]]],
+    ['application/x-mach-o', [[0, b['0xFEEDFACF']], [0, b['0xCFFAEDFE']]]],
     ['application/x-matlab-data', [[0, b['MATLAB']]]],
+    ['application/x-mmm-digisonde', [[0, b["\t<\000"], [[24, b["\000\000"]]]]]],
+    ['application/x-ms-compress-szdd', [[0, b['0x535A444488F0273341']]]],
     ['application/x-msdownload', [[0, b['MZ']]]],
     ['application/x-mswrite', [[0, b["1\276\000\000"]], [0, b["2\276\000\000"]]]],
+    ['application/x-nesrom', [[0, b["NES\032"]]]],
     ['application/x-netcdf', [[0, b["CDF\001"]], [0, b["CDF\002"]], [0, b["CDF\001"]]]],
     ['application/x-object', [[0, b["\177ELF"], [[16, b["\001\000"]], [16, b["\000\001"]]]]]],
     ['application/x-ole-storage', [[0..8, b["\320\317\021\340\241\261\032\341"]]]],
     ['application/x-parquet', [[0, b['PAR1']]]],
+    ['application/x-pds', [[0, b['PDS_VERSION_ID']]]],
     ['application/x-project', [[0, b['MPX,Microsoft Project for Windows,']]]],
     ['application/x-prt', [[8, b['0M3C']]]],
     ['application/x-quattro-pro;version=1+5', [[0, b["\000\000\002\000\001\020"]]]],
@@ -2624,13 +2752,19 @@ module Marcel
     ['application/x-sh', [[0, b['#!/']], [0, b['#! /']], [0, b["#!\t/"]], [0, b["eval \"exec"]]]],
     ['application/x-sharedlib', [[0, b["\177ELF"], [[16, b["\003\000"]], [16, b["\000\003"]]]]]],
     ['application/x-shockwave-flash', [[0, b['FWS']], [0, b['CWS']]]],
+    ['application/x-sibelius', [[0, b["\017SIBELIUS"]]]],
     ['application/x-snappy-framed', [[0, b['sNaPpY']]]],
+    ['application/x-spectrum-tzx', [[0, b["ZXTape!\032"]]]],
+    ['application/x-spss-sav', [[0, b['$FL2@(#)']]]],
     ['application/x-sqlite3', [[0, b["SQLite format 3\000"]]]],
     ['application/x-stata-dta', [[0, b['<stata_dta><header><release>']]]],
     ['application/x-stuffit', [[0, b['StuffIt']]]],
+    ['application/x-subrip', [[0, b["1\n00"]], [0, b["1\r00"]], [0, b["1\r\n\023\003\000"]], [0, b["\357\273\2771\n00"]], [0, b["\357\273\2771\r00"]], [0, b["\357\273\2771\r\n\023\003\000"]]]],
     ['application/x-tex', [[0, b["\\input"]], [0, b["\\section"]], [0, b["\\setlength"]], [0, b["\\documentstyle"]], [0, b["\\chapter"]], [0, b["\\documentclass"]], [0, b["\\relax"]], [0, b["\\contentsline"]]]],
+    ['application/x-tex-virtual-font', [[0, b["\367\312"], [[11, b["\363\000"], [[17, b["\000\020"]]]]]]]],
     ['application/x-texinfo', [[0, b["\\input texinfo"]]]],
     ['application/x-tika-ooxml', [[0, b["PK\003\004"], [[30, b['[Content_Types].xml']], [30, b['_rels/.rels']]]]]],
+    ['application/x-touhou', [[0, b['t1'], [[3, b["[\\162|\\063|\\066|\\065]"], [[5, b['0x00000000000000']]]]]]]],
     ['application/x-uc2-compressed', [[0, b["UC2\032"]]]],
     ['application/x-vhd', [[0, b['conectix']]]],
     ['application/x-x509-cert;format=der', []],
@@ -2639,6 +2773,7 @@ module Marcel
     ['application/x-x509-ec-parameters', [[0, b['-----BEGIN EC PARAMETERS-----']]]],
     ['application/x-x509-key;format=pem', [[0, b['-----BEGIN PRIVATE KEY-----']], [0, b['-----BEGIN PUBLIC KEY-----']], [0, b['-----BEGIN KEY-----']], [0, b['-----BEGIN RSA KEY-----']], [0, b['-----BEGIN RSA PRIVATE KEY-----']], [0, b['-----BEGIN DSA KEY-----']], [0, b['-----BEGIN DSA PRIVATE KEY-----']]]],
     ['application/x-xz', [[0, b["\3757zXZ\000"]]]],
+    ['application/x-zim', [[0, b['0x5A494D04']]]],
     ['application/x-zoo', [[20, b["\334\247\304\375"]]]],
     ['application/xml', [[0, b['<?xml']], [0, b['<?XML']], [0, b["\357\273\277<?xml"]], [0, b["\377\376<\000?\000x\000m\000l\000"]], [0, b["\376\377\000<\000?\000x\000m\000l"]]]],
     ['application/zip', [[0, b["PK\003\004"]], [0, b["PK\005\006"]], [0, b["PK\a\b"]]]],
@@ -2653,6 +2788,8 @@ module Marcel
     ['audio/x-mpegurl', [[0, b["#EXTM3U\r\n"]]]],
     ['audio/x-ms-wma', [[0..8192, b['Windows Media Audio']]]],
     ['audio/x-pn-realaudio', [[0, b[".ra\375"]]]],
+    ['audio/x-psf', [[0, b['PSF'], [[3, b["\001"]], [3, b["\002"]], [3, b["\021"]], [3, b["\022"]], [3, b["\023"]], [3, b['!']], [3, b["\""]], [3, b['#']], [3, b['A']]]]]],
+    ['audio/x-sap', [[0, b["SAP\r\n"]]]],
     ['chemical/x-cdx', [[0, b['VjCD0100']]]],
     ['font/woff', [[0, b['wOFF']]]],
     ['font/woff2', [[0, b['wOF2']]]],
@@ -2668,32 +2805,38 @@ module Marcel
     ['image/jp2', [[0, b["\000\000\000\fjP  \r\n\207\n"], [[20, b['jp2 ']]]]]],
     ['image/jpm', [[0, b["\000\000\000\fjP  \r\n\207\n"], [[20, b['jpm ']]]]]],
     ['image/jpx', [[0, b["\000\000\000\fjP  \r\n\207\n"], [[20, b['jpx ']]]]]],
+    ['image/jxl', [[0, b["\377\n"]], [0, b["\000\000\000\fJXL \r\n\207\n"]]]],
     ['image/nitf', [[0, b['NITF01.10']], [0, b['NITF02.000']], [0, b['NITF02.100']]]],
+    ['image/svg+xml', [[0..4096, b['<svg']]]],
+    ['image/vnd.dgn;version=7', []],
     ['image/vnd.djvu', [[0, b['AT&TFORM']]]],
     ['image/vnd.dwg', [[0, b['MC0.0']], [0, b['AC1.2']], [0, b['AC1.40']], [0, b['AC1.50']], [0, b['AC2.10']], [0, b['AC2.21']], [0, b['AC2.22']]]],
     ['image/vnd.dxb', [[0, b["AutoCAD DXB 1.0\r\n0x1A00"]]]],
-    ['image/vnd.dxf;format=ascii', [[0..3, b["0\\r\\nSECTION\\r\\n"], [[12..18, b["2\\r\\nHEADER\\r\\n"]]]]]],
+    ['image/vnd.dxf;format=ascii', [[0..32, b["(999\\r?\\n[^\\r\\n]{0,64}\\\\s+)?0\\r?\\nSECTION\\r?\\n"], [[12..60, b["2\\r?\\n(?:HEADER|ENTITIES)\\r?\\n"]]]]]],
     ['image/vnd.dxf;format=binary', [[0, b["AutoCAD Binary DXF\r\n0x1A00"]]]],
     ['image/vnd.microsoft.icon', [[0, b["BA(\000\000\000.\000\000\000\000\000\000\000"]], [0, b["\000\000\001\000"]]]],
     ['image/vnd.ms-modi', [[0, b["EP*\000"]]]],
     ['image/vnd.zbrush.dcx', [[0, b["\261h\336:"]]]],
     ['image/wmf', [[0, b["\327\315\306\232\000\000"]], [0, b["\001\000\t\000\000\003"]]]],
+    ['image/x-3ds', [[0, b['MM'], [[6, b["\002\000\n\000\000\000"], [[16, b['==']]]]]]]],
     ['image/x-bpg', [[0, b["BPG\373"]]]],
     ['image/x-dpx', [[0, b['SDPX']], [0, b['XPDS']]]],
     ['image/x-freehand', [[0, b['AGD2']], [0, b['AGD3']], [0, b['AGD4']], [0..24, b['FreeHand10']], [0..24, b['FreeHand11']], [0..24, b['FreeHand12']]]],
     ['image/x-jbig2', [[0, b["\227JB2\r\n\032\n"]]]],
     ['image/x-jp2-container', [[0, b["\000\000\000\fjP  \r\n\207\n"]]]],
     ['image/x-niff', [[0, b['IIN1']]]],
+    ['image/x-os2-graphics; charset=binary', [[0, b['BA'], [[14, b['BM']], [14, b['CI']], [14, b['IC']], [14, b['CP']], [14, b['PT']]]]]],
     ['image/x-pict', [[522, b["\000\021\002\377\f\000"]]]],
     ['image/x-portable-bitmap', [[0, b['P1']], [0, b['P4']]]],
     ['image/x-portable-graymap', [[0, b['P2']], [0, b['P5']], [0, b["P5\n"]]]],
     ['image/x-portable-pixmap', [[0, b['P3']], [0, b['P6']], [0, b['P7']], [0, b["P4\n"]]]],
+    ['image/x-raw-canon', [[0, b["II\032\000\000\000HEAPCCDR"]]]],
     ['image/x-raw-olympus', [[0, b['IIRO']]]],
     ['image/x-rgb', [[0, b["\001\332\001\001\000\003"]]]],
     ['image/x-xbitmap', [[0, b['/* XPM']]]],
     ['image/x-xcf', [[0, b['gimp xcf ']]]],
     ['message/news', [[0, b['Article']]]],
-    ['message/rfc822', [[0, b['Relay-Version:']], [0, b['#! rnews']], [0, b['N#! rnews']], [0, b['Forward to']], [0, b['Pipe to']], [0, b['Return-Path:']], [0, b['Message-ID:']], [0, b['X-Mailer:']], [0, b['X-Notes-Item:'], [[0..8192, b['Message-ID:']]]], [0, nil, [[0, b['Date:']], [0, b['Delivered-To:']], [0, b['From:']], [0, b['Message-ID:']], [0, b['MIME-Version:']], [0, b['Received:']], [0, b['Relay-Version:']], [0, b['Return-Path:']], [0, b['Sent:']], [0, b['Status:']], [0, b['User-Agent:']], [0, b['X-Mailer:']], [0, b['X-Originating-IP:']], [0..1024, b["\nDate:"]], [0..1024, b["\nDelivered-To:"]], [0..1024, b["\nFrom:"]], [0..1024, b["\nMIME-Version:"]], [0..1024, b["\nReceived:"]], [0..1024, b["\nRelay-Version:"]], [0..1024, b["\nReturn-Path:"]], [0..1024, b["\nSent:"]], [0..1024, b["\nStatus:"]], [0..1024, b["\nSubject:"]], [0..1024, b["\nTo:"]], [0..1024, b["\nUser-Agent:"]], [0..1024, b["\nX-Mailer:"]], [0..1024, b["\nX-Originating-IP:"]]]], [0, b['(X|DKIM|ARC)-'], [[0..8192, b["\nDate:"]], [0..8192, b["\nDelivered-To:"]], [0..8192, b["\nFrom:"]], [0..8192, b["\nMessage-ID:"]], [0..8192, b["\nMIME-Version:"]], [0..8192, b["\nReceived:"]], [0..8192, b["\nRelay-Version:"]], [0..8192, b["\nReturn-Path:"]], [0..8192, b["\nStatus:"]], [0..8192, b["\nUser-Agent:"]], [0..8192, b["\nX-Mailer:"]], [0..8192, b["\nX-Originating-IP:"]]]]]],
+    ['message/rfc822', [[0, b['Relay-Version:']], [0, b['#! rnews']], [0, b['N#! rnews']], [0, b['Forward to']], [0, b['Pipe to']], [0, b['Return-Path:']], [0, b['Message-ID:']], [0, b['X-Mailer:']], [0, b['X-Notes-Item:'], [[0..8192, b['Message-ID:']]]], [0, b['(X|DKIM|ARC)-'], [[0..8192, b["\nDate:"]], [0..8192, b["\nDelivered-To:"]], [0..8192, b["\nFrom:"]], [0..8192, b["\nMessage-ID:"]], [0..8192, b["\nMIME-Version:"]], [0..8192, b["\nReceived:"]], [0..8192, b["\nRelay-Version:"]], [0..8192, b["\nReturn-Path:"]], [0..8192, b["\nStatus:"]], [0..8192, b["\nUser-Agent:"]], [0..8192, b["\nX-Mailer:"]], [0..8192, b["\nX-Originating-IP:"]]]]]],
     ['model/vnd.dwf', [[0, b['(DWF V'], [[8, b['.'], [[11, b[')']]]]]]]],
     ['multipart/appledouble', [[0, b["\000\005\026\a"]]]],
     ['text/calendar', [[0, b['BEGIN:VCALENDAR'], [[15..30, b['VERSION:2.0']]]]]],
@@ -2716,11 +2859,14 @@ module Marcel
     ['video/x-sgi-movie', [[0, b["MOVI\000"]], [0, b["MOVI\001"]], [0, b["MOVI\002"]], [0, b["MOVI\376"]], [0, b["MOVI\377"]]]],
     ['application/gzip', [[0, b["\037\213"]], [0, b["\037\213"]]]],
     ['application/zlib', [[0, b["x\001"]], [0, b['x^']], [0, b["x\234"]], [0, b["x\332"]]]],
+    ['message/rfc822', [[0, nil, [[0, nil, [[0, b['Content-ID:']], [0, b['Content-Location:']], [0, b['Content-Transfer-Encoding:']], [0, b['Content-Type:']], [0, b['Date:']], [0, b['Delivered-To:']], [0, b['From:']], [0, b['Message-ID:']], [0, b['MIME-Version:']], [0, b['Received:']], [0, b['Relay-Version:']], [0, b['Return-Path:']], [0, b['Sent:']], [0, b['Status:']], [0, b['Subject:']], [0, b['To:']], [0, b['User-Agent:']], [0, b['X-Mailer:']], [0, b['X-Originating-IP:']]]], [0, nil, [[0..1024, b["\nContent-ID:"]], [0..1024, b["\nContent-Location:"]], [0..1024, b["\nContent-Transfer-Encoding:"]], [0..1024, b["\nContent-Type:"]], [0..1024, b["\nDate:"]], [0..1024, b["\nDelivered-To:"]], [0..1024, b["\nFrom:"]], [0..1024, b["\nMIME-Version:"]], [0..1024, b["\nReceived:"]], [0..1024, b["\nRelay-Version:"]], [0..1024, b["\nReturn-Path:"]], [0..1024, b["\nSent:"]], [0..1024, b["\nStatus:"]], [0..1024, b["\nSubject:"]], [0..1024, b["\nTo:"]], [0..1024, b["\nUser-Agent:"]], [0..1024, b["\nX-Mailer:"]], [0..1024, b["\nX-Originating-IP:"]], [0..1024, b["\nDKIM-"]], [0..1024, b["\nARC-"]]]]]]]],
     ['application/java-vm', [[0, b["\312\376\272\276"]]]],
+    ['application/pdf', [[0..128, b['%%'], [[1..512, b['%PDF-1.']]]], [0..128, b['%%'], [[1..512, b['%PDF-2.']]]]]],
     ['application/vnd.wordperfect', [[0, b["\377WPC"]]]],
-    ['application/x-bzip', [[0, b['BZh']]]],
-    ['application/x-bzip2', [[0, b['BZh91']]]],
+    ['application/x-bzip', [[0, b['BZ0']]]],
+    ['application/x-bzip2', [[0, b['BZh[1-9]']]]],
     ['application/x-font-adobe-metric', [[0, b['StartFontMetrics']]]],
+    ['application/x-font-otf', [[0, b["OTTO\000"]]]],
     ['application/x-font-printer-metric', [[0, b["\000\001"], [[4, b["\000\000Copyr"]]]]]],
     ['application/x-font-ttf', [[0, b["\000\001\000\000"]]]],
     ['application/x-matroska', [[0, b["\032E\337\243"]]]],
@@ -2737,20 +2883,24 @@ module Marcel
     ['application/xhtml+xml', [[0..8192, b['<html xmlns=']]]],
     ['audio/ac3', [[0, b["\vw"]]]],
     ['audio/amr', [[0, b["#!AMR\n"]], [0, b['#!AMR']]]],
+    ['audio/x-aac', [[0, b['ID3'], [[512..2048, b["\\\\377(\\\\360|\\\\361|\\\\370|\\\\371)(\\\\100|\\\\101|\\\\104|\\\\105|\\\\110|\\\\111|\\\\114|\\\\115|\\\\120|\\\\121|\\\\124|\\\\125|\\\\130|\\\\131|\\\\134|\\\\135|\\\\140|\\\\141|\\\\144|\\\\145|\\\\150|\\\\151|\\\\154|\\\\155|\\\\160|\\\\161|\\\\200|\\\\201|\\\\204|\\\\205|\\\\210|\\\\211|\\\\214|\\\\215|\\\\220|\\\\221|\\\\224|\\\\225|\\\\230|\\\\231|\\\\234|\\\\235|\\\\240|\\\\241|\\\\244|\\\\245|\\\\250|\\\\251|\\\\254|\\\\255|\\\\260|\\\\261)(\\\\000|\\\\001|\\\\040|\\\\100|\\\\101|\\\\140|\\\\200|\\\\201|\\\\140|\\\\240|\\\\300|\\\\301|\\\\340)"]]]]]],
     ['image/vnd.zbrush.pcx', [[0, b["\n"], [[1, b["\000"]], [1, b["\002"]], [1, b["\003"]], [1, b["\004"]], [1, b["\005"]]]]]],
     ['message/rfc822', [[0..1000, b["\nMessage-ID:"]]]],
-    ['text/vtt', [[0, b["WEBVTT\r"]], [0, b["WEBVTT\n"]], [0, b['0xfeff'], [[2, b["WEBVTT\r"]]]], [0, b['0xfeff'], [[2, b["WEBVTT\n"]]]], [0, b["WEBVTT FILE\r"]], [0, b["WEBVTT FILE\n"]]]],
+    ['text/html', [[0..64, b['<!DOCTYPE HTML']], [0..64, b['<!DOCTYPE html']], [0..64, b['<!doctype HTML']], [0..64, b['<!doctype html']], [0..64, b['<HEAD']], [0..64, b['<head']], [0..64, b['<TITLE']], [0..64, b['<title']], [0..64, b['<HTML']], [0..128, b['<html']]]],
+    ['text/vtt', [[0, b["WEBVTT\r"]], [0, b["WEBVTT\n"]], [0, b['0xfeff'], [[2, b["WEBVTT\r"]], [2, b["WEBVTT\n"]]]], [0, b['0xfeff'], [[2, b["WEBVTT\r"]], [2, b["WEBVTT\n"]]]], [0, b['0xefbbbf'], [[3, b["WEBVTT\r"]], [3, b["WEBVTT\n"]]]], [0, b["WEBVTT FILE\r"]], [0, b["WEBVTT FILE\n"]]]],
     ['text/x-matlab', [[0, b["function [a-zA-Z][A-Za-z0-9_]{0,62}\\\\s*="]]]],
     ['text/x-matlab', [[0, b["function [a-zA-Z][A-Za-z0-9_]{0,62}[\\\\r\\\\n]"]]]],
     ['application/inf', [[0, b['[version]']], [0, b['[strings]']]]],
     ['application/x-bibtex-text-file', [[0, b['%'], [[2..128, b["\n@article{"]], [2..128, b["\n@book{"]], [2..128, b["\n@inbook{"]], [2..128, b["\n@incollection{"]], [2..128, b["\n@inproceedings{"]], [2..128, b["\n@manual{"]], [2..128, b["\n@misc{"]], [2..128, b["\n@preamble{"]], [2..128, b["\n@phdthesis{"]], [2..128, b["\n@string{"]], [2..128, b["\n@techreport{"]], [2..128, b["\n@unpublished{"]]]]]],
     ['application/xml', [[0, b['<!--']]]],
+    ['audio/x-aac', [[0, b["\\\\377(\\\\360|\\\\361|\\\\370|\\\\371)(\\\\100|\\\\101|\\\\104|\\\\105|\\\\110|\\\\111|\\\\114|\\\\115|\\\\120|\\\\121|\\\\124|\\\\125|\\\\130|\\\\131|\\\\134|\\\\135|\\\\140|\\\\141|\\\\144|\\\\145|\\\\150|\\\\151|\\\\154|\\\\155|\\\\160|\\\\161|\\\\200|\\\\201|\\\\204|\\\\205|\\\\210|\\\\211|\\\\214|\\\\215|\\\\220|\\\\221|\\\\224|\\\\225|\\\\230|\\\\231|\\\\234|\\\\235|\\\\240|\\\\241|\\\\244|\\\\245|\\\\250|\\\\251|\\\\254|\\\\255|\\\\260|\\\\261)(\\\\000|\\\\001|\\\\040|\\\\100|\\\\101|\\\\140|\\\\200|\\\\201|\\\\140|\\\\240|\\\\300|\\\\301|\\\\340)"]]]],
     ['text/vtt', [[0, b['WEBVTT '], [[10..50, b["\n\n"]]]], [0, b['WEBVTT '], [[10..50, b["\r\r"]]]], [0, b['WEBVTT '], [[10..50, b["\r\n\r\n"]]]]]],
     ['text/x-chdr', [[0, b['#ifndef ']]]],
     ['text/x-csrc', [[0, b['#include ']]]],
     ['image/x-jp2-codestream', [[0, b["\377O\377Q"]]]],
     ['text/x-matlab', [[0, b['%'], [[2..120, b["\n%"]]]], [0, b['%'], [[2..120, b["\r%"]]]], [0, b['%%']]]],
     ['application/pdf', [[1..512, b['%PDF-1.']], [1..512, b['%PDF-2.']]]],
+    ['application/vnd.msa-disk-image', [[0, b["\016\017"]]]],
     ['audio/basic', [[0, b['.snd'], [[12, b["\000\000\000\001"]], [12, b["\000\000\000\002"]], [12, b["\000\000\000\003"]], [12, b["\000\000\000\004"]], [12, b["\000\000\000\005"]], [12, b["\000\000\000\006"]], [12, b["\000\000\000\a"]]]], [0, b[".snd\000\000\000"]]]],
     ['audio/midi', [[0, b['MThd']]]],
     ['audio/vnd.wave', [[0, b['RIFF'], [[8, b['WAVE']]]]]],
